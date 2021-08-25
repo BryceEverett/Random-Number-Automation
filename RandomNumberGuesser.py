@@ -5,8 +5,8 @@ missed_nums = []
 def numberguess():
     num = random.randint(1,100) 
     if  num == ranum:
-        print('Correctly Guessed Number: ', num)
         print('Missed Numbers: ', missed_nums) 
+        print('Correctly Guessed Number: ', num)
     elif num in missed_nums:
         numberguess()
     else:
